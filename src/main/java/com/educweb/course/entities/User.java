@@ -12,7 +12,6 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "tb_user")
 public class User implements Serializable {
-    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -29,7 +28,6 @@ public class User implements Serializable {
 
     public User() {
     }
-
 
     public User(Long id, String name, String email, String phone, String password) {
         super();
